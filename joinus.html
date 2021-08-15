@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Join us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="ak.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .in {
+            padding: 4px;
+            background-color: rgba(176, 172, 172, 0.3);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 1.7vw;
+
+
+
+        }
+
+        #body {
+            background-image: url("image2.jpg");
+
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 0px;
+            padding: 0px;
+            background-size: cover;
+
+            width: 100%;
+
+        }
+
+
+        #form {
+            height: fit-content;
+            margin: auto;
+
+
+        }
+
+        #divform {
+            width: 100%;
+            height: 100%;
+
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        .lable {
+            color: black;
+            font-size: 1.7vw;
+            font-weight: bolder;
+            text-align: left;
+            letter-spacing: 2px;
+            background-color: rgba(144, 140, 140, 0.3);
+            border-radius: 5px;
+            padding: 2px;
+        }
+
+        #joinus {
+            height: 60vmin;
+            background-color: rgb(54, 129, 84);
+
+            color: white;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0px;
+            display: flex;
+            flex-wrap: wrap;
+
+            width: 100%;
+        }
+
+        #joinin {
+            font-family: "Do Hyeon", sans-serif;
+            font-size: 7vw;
+        }
+
+        #whyjoin {
+            background-color: white;
+            margin: 0px;
+            size: 100% 100%;
+
+        }
+
+        #flex {
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        #flex>div {
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 1.4vw;
+        }
+
+        #flex>div>h2 {
+            color: rgb(14, 149, 68);
+        }
+
+        #flex>div>h5 {
+            font-family: "Do Hyeon", sans-serif;
+        }
+
+        #thanks {
+            font-family: "Do Hyeon", sans-serif;
+            text-align: center;
+            margin-top: 20vh;
+            font-size: 3vw;
+            height: auto;
+
+        }
+    </style>
+</head>
+
+<body id="body" onload="myfunction() ">
+    <header id="header">
+        <div>
+            <div id="div1">
+                <div class="navigation" onclick="myfun1() ">Home</div>
+                <div class="navigation" onclick="myfun2()">About</div>
+                <div class="navigation" onclick="myfun3()">Join us</div>
+                <div class="navigation" onclick="myfun4()">Contact</div>
+            </div>
+            <div id="div2">
+                <div class="mediadiv">
+                    <a href="https://www.youtube.com/channel/UC0yFCyPloF9RZffCrvEBtbg" class="fa fa-youtube"></a>
+                </div>
+                <div class="mediadiv">
+                    <a href="https://github.com/Akesh0909" class="fa fa-github"></a>
+                </div>
+                <div class="mediadiv">
+                    <a href="https://www.linkedin.com/in/akesh-yadav-995b50204/" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="joinus">
+        <div id="joinin">JOIN US</div>
+    </div>
+
+    <div>
+        <div id="whyjoin">
+            <h1 style="text-align: center; margin: 0px; padding: 20px">
+                Membership Benefits Include
+            </h1>
+            <div id="flex">
+                <div>
+                    <h2>Equipment</h2>
+                    <h5 style="text-align: left">
+                        treadmills<br />ellipticals<br />exercise cycles<br />stair
+                        climbers<br />rowing machines<br />free weights<br />racks<br />synergy
+                        360 systems<br />cable crossovers<br />kettlebells<br />lateral
+                        x trainers<br />amt cross trainers
+                    </h5>
+                </div>
+                <div>
+                    <h2>Lifestyle</h2>
+                    <h5>
+                        personal training<br />team workouts<br />zumba classes<br />cardio
+                        classes<br />yoga classes
+                    </h5>
+                </div>
+                <div>
+                    <h2>Services</h2>
+                    <h5>
+                        24-hour access<br />24-hour security<br />private sanitized
+                        restrooms<br />private sanitized showers<br />gym reservation
+                        system<br />convenient parking<br />worldwide club Access<br />private
+                        restrooms<br />private showers<br />health plan discounts<br />wellness
+                        programs<br />cardio tvs<br />hdtvs
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <form id="form" action="fgh.php">
+            <div id="divform">
+                <p class="phr">
+                    <label for="1" class="lable"> Name: </label><input type="text" class="in" id="1" name="name"
+                        placeholder="Enter Name" required />
+                </p>
+                <p class="phr">
+                    <label for="2" class="lable">Age:</label><input type="number" class="in" id="2" name="age"
+                        placeholder="Enter age" required />
+                </p>
+
+                <label for="7" class="lable"> Male</label>
+                <input type="radio" name="gender" id="7" required />
+
+                <label for="8" class="lable"> Female</label>
+                <input type="radio" name="gender" id="8" required />
+
+                <label for="9" class="lable"> Other</label><input type="radio" name="gender" id="9" required />
+
+                <p class="phr">
+                    <label for="3" class="lable">Address:</label>
+
+                    <textarea value="enter your address here" cols="30" rows="10" class="in" id="3" name="address"
+                        placeholder="Enter Address" required></textarea>
+                </p>
+
+                <p class="phr">
+                    <label for="13" class="lable">Email:</label>
+                    <input type="email" id="13" name="email" class="in" placeholder="Enter Email" required />
+                </p>
+                <p class="phr">
+                    <label for="14" class="lable">Phone No.:</label>
+                    <input type="tel" id="14" name="Phone no" class="in" placeholder="Enter Phone No." required />
+                </p>
+                <p class="phr">
+                    <label for="branch" class="lable">Select branch:</label>
+                    <select name="branch name" id="branch" class="in" required>
+                        <option>Delhi</option>
+                        <option>Gurugram</option>
+                        <option>Rewari</option>
+                    </select>
+                </p>
+
+                <input class="in" type="reset" />
+                <input class="in" type="submit" />
+            </div>
+        </form>
+        <div>
+            <p id="thanks">Thanks For Joining Us</p>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <a href="chest.html">CHEST</a>
+        <a href="back.html">BACK</a>
+        <a href="arms.html">ARMS</a>
+        <a href="abs.html">ABS</a>
+        <a href="legs.html">LEGS</a>
+        <a href="shoulders.html">SHOULDERS</a>
+        <a href="diet.html">DIET CHART</a>
+    </footer>
+
+    <script src="ak.js"></script>
+    <script>
+        var i = 0;
+
+        function myfunction() {
+            setTimeout("myfunction2()", 1000);
+        }
+
+        function myfunction2() {
+            var a = new Array("AliceBlue", "Bisque", "LightBlue", "pink");
+
+            if (i < 4) {
+                document.getElementById("joinin").style.color = a[i++];
+
+                document.getElementById("thanks").style.color = a[i];
+                setTimeout("myfunction2()", 1000);
+            } else {
+                i = 0;
+                myfunction();
+            }
+
+        }
+    </script>
+</body>
+
+</html>

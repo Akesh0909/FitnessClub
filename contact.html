@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ak.css">
+
+    <style>
+        #body {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #contactus {
+
+            height: 60vmin;
+            background-color: rgb(81, 145, 190);
+            background-size: cover;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0px;
+            display: flex;
+            width: 100%;
+
+
+
+
+
+        }
+
+        #contactin {
+            font-family: "Do Hyeon", sans-serif;
+            font-size: 7vw;
+        }
+
+
+
+        .info {
+
+
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            margin: 0px;
+            background-image: url("image3.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 80vmin;
+        }
+
+        .info>div {
+            width: 30%;
+            margin: auto;
+            background-color: rgb(113, 169, 209);
+
+
+
+            border: 3px solid rgb(10, 10, 10);
+            border-radius: 7px;
+            padding: 2%;
+            margin-bottom: 5%;
+
+
+        }
+    </style>
+</head>
+
+<body id="body" onload="myfunction()">
+
+    <header id="header">
+        <div>
+            <div id="div1">
+                <div class="navigation" onclick="myfun1()">Home</div>
+                <div class="navigation" onclick="myfun2()">About </div>
+                <div class="navigation" onclick="myfun3()">Join us</div>
+                <div class="navigation" onclick="myfun4()">Contact</div>
+            </div>
+            <div id="div2">
+                <div class="mediadiv">
+                    <a href="https://www.youtube.com/channel/UC0yFCyPloF9RZffCrvEBtbg" class="fa fa-youtube"></a>
+                </div>
+                <div class="mediadiv">
+                    <a href="https://github.com/Akesh0909" class="fa fa-github"></a>
+                </div>
+                <div class="mediadiv">
+                    <a href="https://www.linkedin.com/in/akesh-yadav-995b50204/" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div id="contactus">
+        <div id="contactin">CONTACT</div>
+
+    </div>
+
+    <div class="info">
+        <div class="address">
+
+            <h4>Location:</h4>
+            <p> Downtown conference center </p>
+        </div>
+
+        <div class="email">
+
+            <h4>Email:</h4>
+            <p>akeshrao1709a.r@gmail.com</p>
+        </div>
+
+        <div class="phone">
+
+            <h4>Mobile:</h4>
+            <p>+91 8307714148</p>
+        </div>
+
+    </div>
+
+
+    <iframe style="border:0; width: 100%; height: 270px;"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+        frameborder="0" allowfullscreen=""></iframe>
+       
+
+
+    <footer id="footer">
+        <a href="chest.html">CHEST</a>
+        <a href="back.html">BACK</a>
+        <a href="arms.html">ARMS</a>
+        <a href="abs.html">ABS</a>
+        <a href="legs.html">LEGS</a>
+        <a href="shoulders.html">SHOULDERS</a>
+        <a href="diet.html">DIET CHART</a>
+    </footer>
+
+    <script src="ak.js"></script>
+    <script>
+        var i = 0;
+
+        function myfunction() {
+            setTimeout("myfunction2()", 1000);
+        }
+
+        function myfunction2() {
+            var a = new Array("AliceBlue", "Bisque", "LightBlue", "pink");
+
+            if (i < 4) {
+                document.getElementById("contactin").style.color = a[i++];
+                setTimeout("myfunction2()", 1000);
+            } else {
+                i = 0;
+                myfunction();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

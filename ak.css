@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+.navigation {
+  display: inline-block;
+ 
+
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  color: white;
+  font-family: "Do Hyeon", sans-serif;
+  padding: 4px;
+  font-size:20px;
+}
+
+.navigation:hover {
+  color: rgb(72, 255, 0);
+  cursor: pointer;
+}
+
+#header {
+  position: fixed;
+  background-color: black;
+  background-size: 100%;
+  top: 0px;
+  width: 100%;
+  line-height: 15px;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+
+  width: 100%;
+}
+
+.fa {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+}
+
+#div1 {
+  display: block;
+  position: absolute;
+  left: 0px;
+ margin-left: 10%;
+  width: 50%;
+}
+
+#div2 {
+  display: block;
+  position: absolute;
+  right: 0px;
+  margin-right: 10%;
+  text-align: right;
+  width: 50%;
+}
+
+.fa:hover {
+  color: rgb(240, 98, 88);
+  cursor: pointer;
+}
+
+.mediadiv {
+  display: inline-block;
+
+  margin-left: 3%;
+  margin-right: 3%;
+}
+#footer {
+  background-color: rgb(15, 14, 14);
+  text-align: center;
+  color: wheat;
+  padding: 2px;
+  width: 100%;
+  height: 25px;
+  position: fixed;
+  bottom: 0px;
+  font-size: 18px;
+}
+
+#footer > a {
+  text-decoration: none;
+  margin-left: 2%;
+  margin-right: 2%;
+  color: white;
+}
+
+#footer > a:hover {
+  color: yellow;
+}

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Akesh Fitness Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="ak.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #body {
+            background-image: url("image1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+            width: 100%;
+            font-family: "Do Hyeon", sans-serif;
+
+            padding: 0px;
+            margin: 0px;
+
+
+        }
+
+
+
+        .mySlides {
+            display: none;
+
+
+
+        }
+
+        .mySlides:hover {
+            cursor: pointer;
+
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+
+        .slideshow-container {
+
+            position: relative;
+
+            margin: auto;
+            margin-top: 15 vh;
+
+            max-width: 80vw;
+
+        }
+
+
+        .text {
+            color: white;
+            font-size: 3vw;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+
+        .numbertext {
+            color: white;
+            font-size: 1.5vw;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+
+        }
+
+
+        .dot {
+            height: 1.5vw;
+            width: 1.5vw;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #ba7611;
+        }
+
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .9
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .9
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        #content {
+            background: rgba(128, 128, 128, 0.7);
+            width: 80%;
+            font-size: 22px;
+            margin: auto;
+            padding: 2%;
+        }
+
+        #content>div {
+            width: 30vw;
+            margin: auto;
+        }
+
+        #content>div>p>b {
+            color: rgb(189, 50, 50);
+            border;
+        }
+    </style>
+</head>
+
+
+<body id="body">
+    <header id="header">
+        <div>
+            <div id="div1">
+                <div class="navigation" onclick="myfun1()">Home</div>
+                <div class="navigation" onclick="myfun2()">About </div>
+                <div class="navigation" onclick="myfun3()">Join us</div>
+                <div class="navigation" onclick="myfun4()">Contact</div>
+            </div>
+            <div id="div2">
+                <div class="mediadiv">
+                    <a href="https://www.youtube.com/channel/UC0yFCyPloF9RZffCrvEBtbg" class="fa fa-youtube"></a>
+                </div>
+                <div class="mediadiv">
+                    <a href="https://github.com/Akesh0909" class="fa fa-github"></a>
+                </div>
+                <div class="mediadiv">
+                    <a href="https://www.linkedin.com/in/akesh-yadav-995b50204/" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <h1 style='text-align: center; color: rgb(21, 197, 21); font-family: "Do Hyeon", sans-serif; margin-top: 10vh;'>FITNESS CLUB</h1>
+
+    <div class=" slideshow-container">
+
+        <div class="mySlides fade" onclick="exercise(1)">
+            <div class="numbertext">1 / 7</div>
+            <img src="chest.jpg" style="width:100%">
+            <div class="text">CHEST</div>
+        </div>
+
+        <div class="mySlides fade" onclick="exercise(2)">
+            <div class="numbertext">2 / 7</div>
+            <img src="back.jpg" style="width:100%">
+            <div class="text">BACK</div>
+        </div>
+
+        <div class="mySlides fade" onclick="exercise(3)">
+            <div class="numbertext">3 / 7</div>
+            <img src="arms.jpg" style="width:100%">
+            <div class="text">ARMS</div>
+        </div>
+        <div class="mySlides fade" onclick="exercise(4)">
+            <div class="numbertext">4 / 7</div>
+            <img src="abs.jpg" style="width:100%">
+            <div class="text">ABS</div>
+        </div>
+
+        <div class="mySlides fade" onclick="exercise(5)">
+            <div class="numbertext">5 / 7</div>
+            <img src="legs.jpg" style="width:100%">
+            <div class="text">LEGS</div>
+        </div>
+        <div class="mySlides fade" onclick="exercise(6)">
+            <div class="numbertext">6 / 7</div>
+            <img src="shoulders.jpg" style="width:100%">
+            <div class="text">SHOULDERS</div>
+        </div>
+        <div class="mySlides fade" onclick="exercise(7)">
+            <div class="numbertext">7 / 7</div>
+            <img src="diet.jpg" style="width:100%">
+            <div class="text">DIET CHART</div>
+        </div>
+
+
+    </div>
+    <br>
+    <div style="text-align:center; position: relative;top: auto; ">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div id="content">
+        <h2>Advantages of Going to the Gym Everyday: Everything You Need to Know</h2>
+        <p>In today’s hectic and fast moving world, having a gym membership is the one thing that can motivate you
+            to
+            work
+            out and keep yourself in shape. There is no denying the fact that regular exercise can benefit your body
+            and
+            also keep your mind and brain on top of things. Working out in the gym not only helps you shed those
+            extra
+            pounds, keeps you fit but also has a whole lot of health benefits.
+            <br><br>
+            Regular exercise has been shown to improve cardiovascular fitness and decrease blood pressure and blood
+            fat
+            levels and decrease belly fat. The importance of physical fitness can thus be equated to the benefits of
+            joining
+            a gym as this is a clear shot to a healthy body and mind.
+        </p>
+        <h3>Helps in weight loss</h3>
+        <p>Exercise is crucial to supporting a fast metabolism and burning more calories per day. It also helps
+            maintain
+            muscle mass and weight loss. <br><br>
+
+            Daily physical activity is essential to maintaining a healthy weight and reducing the risk of chronic
+            disease.</p>
+        <h3>Helps brain health and memory</h3>
+        <p>Regular exercise improves blood flow to the brain and helps brain health and memory. Among older adults,
+            it
+            can help protect mental function. <br><br>
+
+            It acts as an energy booster as regular exercise can reduce fatigue and can significantly increase
+            energy
+            levels.</p>
+        <h3>Strength training</h3>
+        <p>These exercises make your muscles stronger. Strengthening your muscles not only makes you stronger, but
+            also
+            stimulates bone growth, lowers blood sugar, assists with weight control, improves balance and posture,
+            and
+            reduces stress and pain in the lower back and joints. These can include body weight exercises like
+            squats,
+            push-ups, and lunges, and exercises involving resistance from a weight, a band, or a weight machine.</p>
+        <h3>Balance</h3>
+        <p>Balance exercises not only helps in preventing falls but also your ability to control and stabilize your
+            body's position. These exercises are especially beneficial as we get older. Typical balance exercises
+            include standing on one foot or walking heel to toe. Balance-focused exercise classes, such as tai chi
+            or
+            yoga are offered in many gyms. It's always good to get ahead of things and start with these workouts and
+            exercises so that later in life balancing your body weight will not be a hindrance to your daily
+            routine.
+        </p>
+        <h3>Aerobic exercises</h3>
+        <p>Aerobic exercises give your heart and lungs a workout and increase endurance. It also helps relax blood
+            vessel walls, lower blood pressure, and burn body fat, lower blood sugar levels, reduce inflammation,
+            boost
+            mood. This type of exercise can reduce the risk of cardiovascular disease, type 2 diabetes and high
+            blood
+            pressure, and may even lower the risk of cancer.</p>
+        <h3>Flexibility</h3>
+        <p>These exercises are especially beneficial as they stretch your muscles and may improve your range of
+            motion
+            at your joints. They can improve your flexibility and reduce your risk of injury during sports and other
+            activities. <br><br>
+
+            You can also avail of the exercise machines/gym machines to maintain a healthy body. And if you require
+            special or additional attention with specific training, you could also avail of the gym personal
+            trainer,
+            who will be able to help and guide you during your gym workouts. Gym trainers are particularly helpful
+            in
+            performing the right workouts and motivating you to go that extra mile and bring about consistency in
+            your
+            gym regime. The importance of fitness in life cannot be undermined as a healthy body and mind go a long
+            way
+            in not improving your lifestyle but also contribute to longevity.</p>
+        <div>
+
+            <p><strong>The last three or four reps is what makes the muscle grow. This area of pain divides a
+                    champion
+                    from
+                    someone who is not a champion.</strong> <br><b>-Arnold Schwarzenegger, seven-time Mr.
+                    Olympia</b>
+            </p>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <footer id="footer">
+        <a href="chest.html">CHEST</a>
+        <a href="back.html">BACK</a>
+        <a href="arms.html">ARMS</a>
+        <a href="abs.html">ABS</a>
+        <a href="legs.html">LEGS</a>
+        <a href="shoulders.html">SHOULDERS</a>
+        <a href="diet.html">DIET CHART</a>
+    </footer>
+
+
+
+    <script src="ak.js"></script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+
+            dots[slideIndex - 1].className += " active";
+            setTimeout("showSlides()", 3000);
+        }
+    </script>
+</body>
+
+
+</html>
